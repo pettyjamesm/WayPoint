@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    
-    <string name="app_name">WayPoint Premium</string>
-<string name="version_number">2.0.1</string>
-
-
-
-<string name="resolve_open">Import WayPoint</string>
-<string name="maps_api_key">07DDDP99c9hgFTNPWMpDWZIXK8JLW6VKQokEe1g</string>
+    <string name="app_name">WayPoint</string>
+	<string name="version_number">1.0.0</string>
+	<string name="resolve_open">Import WayPoint</string>
+	<string name="maps_api_key">07DDDP99c9hgFTNPWMpDWZIXK8JLW6VKQokEe1g</string>
 </resources>
