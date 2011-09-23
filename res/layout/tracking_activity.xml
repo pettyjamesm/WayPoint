@@ -102,7 +102,7 @@
 	  		android:orientation="vertical"
 	  		android:gravity="center_horizontal" >
 	  		<!-- Direction Arrow -->
-	  		<com.crobot.waypoint.premium.tracking.ArrowView
+	  		<com.crobot.waypoint.tracking.ArrowView
 		  		android:id="@+id/wp_tracking_arrowView"
 		  		android:layout_width="wrap_content"
 		  		android:layout_height="wrap_content"
