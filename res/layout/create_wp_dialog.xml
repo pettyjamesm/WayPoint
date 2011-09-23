@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:orientation="vertical"
+  android:layout_margin="5dip"
+  android:padding="5dip"
+  android:layout_gravity="center_horizontal"
+  android:gravity="top">
+  
+  <TextView 
+  	android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"
+  	android:text="WayPoint Name:"
+  	android:layout_gravity="left" 
+  	android:layout_margin="5dip"/>
+  <EditText
+  	android:id="@+id/waypointNameTV"
+  	android:layout_width="fill_parent"
+  	android:layout_height="wrap_content"
+  	android:layout_margin="5dip"
+  	android:singleLine="true"
+  	android:inputType="textCapWords"
+  	android:selectAllOnFocus="true"/>
+  	
+  <TextView 
+  	android:id="@+id/createWayPointGPSStatus"
+  	android:layout_width="fill_parent"
+  	android:layout_height="wrap_content"
+  	android:paddingTop="30dip"
+  	android:paddingBottom="30dip"
+  	android:layout_gravity="center_horizontal"
+  	android:gravity="center_horizontal" />
+  	
+  <Button 
+  	android:id="@+id/createWayPointButton"
+  	android:layout_width="fill_parent"
+  	android:layout_height="wrap_content"
+  	android:layout_margin="5dip"
+  	android:layout_gravity="center_horizontal"
+  	android:text="Add WayPoint" /> 
+  	
+</LinearLayout>

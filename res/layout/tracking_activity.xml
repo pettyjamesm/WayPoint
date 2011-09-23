@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/tracking_rootLayout"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:orientation="vertical">
+  	<!-- ArrowView and Info Pane -->
+	<LinearLayout
+		android:id="@+id/tracking_gpsBarLayout"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="5dip"
+		android:orientation="horizontal">
+			
+	  	<!-- Info Panel Layout -->
+	  	<LinearLayout
+	  		android:layout_width="fill_parent"
+	  		android:layout_height="wrap_content"
+	  		android:orientation="vertical"
+	  		android:layout_weight="1">
+	  		
+	  		<!-- GPS Info Header -->
+  			<TextView 
+  				android:layout_width="fill_parent"
+  				android:layout_height="wrap_content"
+  				android:gravity="center_vertical|left"
+  				android:textColor="@android:color/white"
+		  		android:textSize="18sp"
+		  		android:textStyle="bold"
+		  		android:text="GPS Readings"/>
+		  	<!-- Current Location Details -->
+		  	<TableLayout
+		  		android:layout_width="fill_parent"
+		  		android:layout_height="wrap_content"
+		  		android:paddingLeft="2dip"
+		  		android:stretchColumns="1">
+		  		<!-- Latitude Row -->
+		  		<TableRow>
+		  			<TextView 
+		  				android:layout_width="fill_parent"
+		  				android:layout_height="wrap_content"	
+		  				android:layout_column="0"	  				
+		  				android:gravity="center_vertical|left"
+		  				android:textSize="14sp"
+		  				android:text="Latitude:" />
+		  			<TextView 
+		  				android:id="@+id/wp_tracking_currentLatitude"
+		  				android:layout_width="fill_parent"
+		  				android:layout_height="wrap_content"
+		  				android:paddingLeft="2dip"
+		  				android:layout_column="1"
+		  				android:gravity="center_vertical|center_horizontal"
+		  				android:textSize="14sp"
+		  				android:text="-"/>
+		  		</TableRow>
+		  		<!-- Longitude Row -->
+		  		<TableRow>
+		  			<TextView 
+		  				android:layout_width="fill_parent"
+		  				android:layout_height="wrap_content"
+		  				android:layout_column="0"	  				
+		  				android:gravity="center_vertical|left"
+		  				android:textSize="14sp"
+		  				android:text="Longitude:" />
+		  			<TextView 
+		  				android:id="@+id/wp_tracking_currentLongitude"
+		  				android:layout_width="fill_parent"
+		  				android:layout_height="wrap_content"
+		  				android:paddingLeft="2dip"
+		  				android:layout_column="1"
+		  				android:gravity="center_vertical|center_horizontal"
+		  				android:textSize="14sp"
+		  				android:text="-"/>
+		  		</TableRow>
+		  		<!-- Accuracy Row -->
+		  		<TableRow>
+		  			<TextView 
+		  				android:layout_width="fill_parent"
+		  				android:layout_height="wrap_content"
+		  				android:layout_column="0"	  				
+		  				android:gravity="center_vertical|left"
+		  				android:textSize="14sp"
+		  				android:text="Accuracy:" />
+		  			<TextView 
+		  				android:id="@+id/wp_tracking_currentAccuracy"
+		  				android:layout_width="fill_parent"
+		  				android:layout_height="wrap_content"
+		  				android:paddingLeft="2dip"
+		  				android:layout_column="1"
+		  				android:gravity="center_vertical|center_horizontal"
+		  				android:textSize="14sp"
+		  				android:text="-"/>
+		  		</TableRow>
+		  	</TableLayout>
+	  	</LinearLayout>
+	  	<LinearLayout
+	  		android:id="@+id/tracking_arrowPaneLayout"
+	  		android:layout_width="fill_parent"
+	  		android:layout_height="fill_parent"
+	  		android:layout_weight="1"
+	  		android:orientation="vertical"
+	  		android:gravity="center_horizontal" >
+	  		<!-- Direction Arrow -->
+	  		<com.crobot.waypoint.premium.tracking.ArrowView
+		  		android:id="@+id/wp_tracking_arrowView"
+		  		android:layout_width="wrap_content"
+		  		android:layout_height="wrap_content"
+		  		android:layout_gravity="center_horizontal"/>
+	  	</LinearLayout>	  	
+	</LinearLayout>
+	
+	<!-- Distance To Target Row -->
+	<TextView 
+	  	android:id="@+id/wp_tracking_distance"
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="wrap_content"
+	  	android:gravity="center_horizontal|center_vertical"
+	  	android:textColor="@android:color/white"
+	  	android:layout_margin="5dip"
+	  	android:textSize="18sp"
+	  	android:text="Calculating Distance..." />
+
+	<com.google.android.maps.MapView
+	  	android:id="@+id/wp_tracking_mapView"
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="fill_parent"
+	  	android:layout_margin="5dip"
+	  	android:enabled="true"
+	  	android:clickable="false"
+	  	android:apiKey="@string/maps_api_key" />
+</LinearLayout>

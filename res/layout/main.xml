@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white" >
+    
+    <ImageView 
+    	android:id="@+id/logoImage"
+    	android:src="@drawable/wp_header"
+    	android:layout_height="wrap_content"
+    	android:layout_width="wrap_content"
+    	android:layout_gravity="center_horizontal"
+    	android:padding="5dip" />
+    	
+    <Button
+    	android:id="@+id/ha_createWayPointButton"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:text="Add WayPoint"
+    	android:layout_margin="5dip" />
+    <Button 
+    	android:id="@+id/ha_listWayPointsButton"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:text="My WayPoints"
+    	android:layout_margin="5dip"/>
+	    	
+
+</LinearLayout>

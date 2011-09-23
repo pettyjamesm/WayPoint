@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+  <item 
+  	android:id="@+id/tracking_menu_toggleShowMap"
+  	android:title="Hide Map"
+  	android:icon="@android:drawable/ic_menu_compass" />
+  <item 
+  	android:id="@+id/tracking_menu_toggleSatellite"
+  	android:title="Satellite View"
+  	android:icon="@android:drawable/ic_menu_mapmode" />
+</menu>

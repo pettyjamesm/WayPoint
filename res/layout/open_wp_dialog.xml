@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:orientation="vertical"
+  android:layout_gravity="center_horizontal"
+  android:background="#ff444444">
+  
+  <TextView 
+  	android:layout_width="fill_parent"
+  	android:layout_height="wrap_content"
+  	android:padding="5dip"
+  	android:gravity="left"
+  	android:text="WayPoint Name:"/>
+  <EditText 
+  	android:id="@+id/open_wp_wpName"
+  	android:layout_width="fill_parent"
+  	android:layout_height="wrap_content"
+  	android:layout_margin="5dip"
+  	android:singleLine="true"
+  	android:selectAllOnFocus="true"
+  	android:inputType="textCapWords" />
+  	
+  <TextView 
+  	android:id="@+id/open_wp_wpDateAdded"
+  	android:layout_width="fill_parent"
+  	android:layout_height="wrap_content"
+  	android:layout_margin="5dip" 
+  	android:gravity="center_horizontal" />
+  	
+  <ImageButton 
+  	android:id="@+id/open_wp_navigateToWPButton"
+  	android:src="@android:drawable/ic_menu_compass"
+  	android:layout_width="fill_parent"
+  	android:layout_height="wrap_content"
+  	android:layout_margin="5dip"
+  	android:layout_gravity="center_horizontal" />
+  	
+  <ImageButton 
+  	android:id="@+id/open_wp_sendWPButton"
+  	android:src="@android:drawable/ic_menu_send"
+  	android:layout_width="fill_parent"
+  	android:layout_height="wrap_content"
+  	android:layout_margin="5dip"
+  	android:layout_gravity="center_horizontal"/>
+  	
+  <Button 
+	android:id="@+id/open_wp_deleteButton"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:layout_margin="5dip"
+	android:text="Delete WayPoint" />
+		
+</LinearLayout>

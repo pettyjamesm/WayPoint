@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+  <TableRow
+  	android:layout_width="fill_parent"
+  	android:layout_height="wrap_content"
+  	android:paddingTop="5dip" >
+	  <EditText
+	    android:layout_height="wrap_content"
+	    android:layout_width="fill_parent"
+	    android:hint="Recipient Email"
+	    android:id="@+id/send_wp_emailInput"
+	    android:inputType="textEmailAddress"
+	    android:layout_weight="1"
+	    android:selectAllOnFocus="true"
+	    android:layout_alignParentLeft="true" />
+	  <Button
+	    android:layout_height="fill_parent"
+	    android:layout_width="wrap_content"
+	    android:layout_alignParentRight="true"
+	    android:id="@+id/send_wp_browseEmail"
+	    android:src="@android:drawable/ic_menu_search"
+	    android:scaleType="fitCenter"
+	    android:onClick="doLaunchContactPicker"
+	    android:textSize="11sp"
+	    android:text="Contacts"/>
+  </TableRow>
+  <TableRow
+  	android:layout_width="fill_parent"
+  	android:layout_height="wrap_content"
+  	android:paddingTop="30dip">
+	  <TextView 
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="wrap_content"
+	  	android:id="@+id/send_wp_waypointName"
+	  	android:gravity="center_horizontal"
+	  	android:layout_margin="5dip"
+	  	android:layout_marginTop="30dip"
+	  	android:textSize='15sp'
+	  	android:textColor="@android:color/white"
+	  	android:layout_weight="1"/>
+	</TableRow>
+	<TableRow 
+	  android:layout_width="fill_parent"
+  	  android:layout_height="wrap_content"
+	  android:paddingTop="30dip">
+  	  <Button 
+  	  	android:id="@+id/send_wp_sendButton"
+  	  	android:layout_width="fill_parent"
+  	  	android:layout_height="wrap_content"
+  	  	android:onClick="doSendEmail"
+  	  	android:layout_weight="1"
+  	  	android:text="Send WayPoint"/>
+  	</TableRow>
+</TableLayout>
