@@ -1,1 +1,17 @@
-Hey, remind me to flesh out this README later. Thanks.
+ WayPoint Premium README
+
+- ABOUT
+========
+I made WayPoint in about January, 2011 and released it through CaptiveRobot with free and premium
+versions. Free Edition only allowed you to save one WayPoint at a time and couldn't send WayPoint
+attachments, only receive them. Since then I've started working at another company and don't have time
+to maintain WayPoint, but received some great suggestions from the user community about features they
+wanted to have and ways they think the product could be improved. Since I can't hope to implement the
+changes myself, I've open-sourced the code and released the previously premium version for free as
+just "WayPoint".
+
+Please, feel free to make changes, improvements and modifications and I'll be happy to integrate them
+into this repository and publish it to Android App Market. I'll of course add you to the contributers
+list if you'd like and if your changes represent more of a fork to WayPoint, I'm happy to release your
+changes as a separate product on your behalf. All work I've done is totally free and unlicensed. Take it,
+make it your own, and consider giving some of it back. Thanks for your time.
